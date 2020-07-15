@@ -16,25 +16,25 @@
 # 프로젝트 
 ## BAINFRA <img src="https://user-images.githubusercontent.com/68227132/87533361-744db100-c6cf-11ea-8cf9-a865238391e9.png" alt="virbak logo" width="22" height="22"/>
 * Oracle12C 
- `BAINFRA, 2018.05 ~ 2018.12`
+`BAINFRA (2018.05 ~ 2018.12)`
  
   - VIRBAK Solution에서 구동가능 하도록 개발
     Oracle12C DB Backup/Restore
 
 * NDMP
- `BAINFRA, 2017.12 ~ 2018.05` 
+`BAINFRA (2017.12 ~ 2018.05)` 
  
   - VIRBAK Solution에서 구동 가능 하도록 개발
     NDMP Server에서 DB Backup/Restore
   
 * OracleRman
- `BAINFRA, 2017.01 ~ 2017.12`
+`BAINFRA (2017.01 ~ 2017.12)`
  
   - VIRBAK Solution에서 구동가능 하도록 개발
     Oracle Rman DB Backup/Restore 
  
 * 개인 프로젝트 Command tools 
- `BAINFRA, 2016.01 ~ 2017.01`
+`BAINFRA (2016.01 ~ 2017.01)`
   
   - VIRBAK Command tool 개발
   * scan_file - file 검색 및 로그 
@@ -44,12 +44,14 @@
   * storage_list - storage 리스트 확인
   * volume_list - volume 리스트 확인
   
-  `2014.07 ~ 2014.10`
+`2014.07 ~ 2014.10`
+
   - 목원대학교 다빈
   * 다빈 - 아두이노를 이용한 태양열 압축 쓰레기
     적외선 감지 센서, wifly shield, 태양열 전지판 사용
   
-  `2012.06 ~ 2012.07
+`2012.06 ~ 2012.07
+
   - 목원앱창작터 앱 기획/안드로이드 
   * Horse Racing - download 1만 이상달성(개발 당시 버전이 낮아 없어짐)
     Java 사용
@@ -65,11 +67,12 @@
  - 코드 리뷰가 습관화 되어 있습니다.
  - 신기술에 대한 거부감이 없습니다.
  
-# 활동  
-* 비트교육센터 자바 빅데이터 고급인력 양성과정 이수 (2015.06-2015.09)
-* 대덕인재개발원 전자정부 프레임워크 기반 SW 전문인력 양성과정 이수 (2014.06-2014.12)
-* 목원대학교 정보통신 공학과 학과대표 (2013.03-2014.12)
-* 목원대학교 흑백사진동아리 회장 (2013.03-2013.12)
+# 활동 
+* 중국 칭다오대학 언어연수 (2019.09 ~ 2020.01)
+* 비트교육센터 자바 빅데이터 고급인력 양성과정 이수 (2015.06 ~ 2015.09)
+* 대덕인재개발원 전자정부 프레임워크 기반 SW 전문인력 양성과정 이수 (2014.06 ~ 2014.12)
+* 목원대학교 정보통신 공학과 학과대표 (2013.03 ~ 2014.12)
+* 목원대학교 흑백사진동아리 회장 (2013.03 ~ 2013.12)
 
   
   
