@@ -1091,14 +1091,7 @@ static int MakeOracleRmanRestoreFileList()
 					va_write(fd, buf, (int)strlen(buf), DATA_TYPE_NOT_CHANGE);
 				}
 			}
-			/*else if (restoreFileList[i].filetype == ORACLE_RMAN_SPFILE && restoreFileList[i].objectNumber > 0)
-			{
-				fileObject = (struct restoreFileObject *)restoreFileList[i].object;
-				
-				memset(buf, 0, sizeof(buf));
-				sprintf(buf, "SPFILE_%s\n", fileObject->backupset);
-				va_write(fd, buf, (int)strlen(buf), DATA_TYPE_NOT_CHANGE);
-			}*/
+			
 		}
 
 		va_close(fd);
@@ -1360,20 +1353,7 @@ static int CheckRestoreFile(struct fileHeader * fileHeader, rman_fd_t * fdOracle
 					{
 						strcpy(dataFileTo, fileObject->target);
 					}
-					/*
-					for (j = 0; j < restoreFileList[i].objectNumber; j++)
-					{
-						tableSpaceObject = ((struct restoreTableSpaceObject *)restoreFileList[i].object + j);
-						if (strcmp(tableSpaceObject->backupset, fileHeader->backupset) == 0)
-						{
-							strcpy(restorePath, restoreFileList[i].tableSpaceName);
-							
-							fdOracleRman->fileNumber = restoreFileList[i].objectNumber;
-							
-							break;
-						}
-					}
-					*/
+					
 				}
 
 

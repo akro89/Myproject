@@ -980,13 +980,11 @@ void RemoveASMControlBackupFile(char *file)
 	memset(commandmsg, 0, sizeof(commandmsg));
 	memset(ASMFilePathCTL, 0, sizeof(ASMFilePathCTL));
 	memset(LocalFilePathCTL, 0, sizeof(LocalFilePathCTL));
-	//memset(ASMFilePathTRC, 0, sizeof(ASMFilePathTRC));
-	//memset(LocalFilePathTRC, 0, sizeof(LocalFilePathTRC));
+	
     
 	sprintf(ASMFilePathCTL, "%s%c%s_%s", ORACLE_RMAN_COPY_TO_ASM_FOLDER, FILE_PATH_DELIMITER, commandData.backupset, ORACLE_CONTROL_FILE_BINARY_BACKUP_NAME);
 	sprintf(LocalFilePathCTL, "%s%c%s_%s", ORACLE_RMAN_LOG_FOLDER, FILE_PATH_DELIMITER, commandData.backupset, ORACLE_CONTROL_FILE_BINARY_BACKUP_NAME);
-	//sprintf(ASMFilePathTRC, "%s%c%s_%s", ORACLE_RMAN_COPY_TO_ASM_FOLDER, FILE_PATH_DELIMITER, commandData.backupset, ORACLE_CONTROL_FILE_TRACE_BACKUP_NAME);
-	//sprintf(LocalFilePathTRC, "%s%c%s_%s", ORACLE_RMAN_LOG_FOLDER, FILE_PATH_DELIMITER, commandData.backupset, ORACLE_CONTROL_FILE_TRACE_BACKUP_NAME);
+	
 	
 	va_fd_t fd;
 	fd = va_open(ABIOMASTER_CLIENT_FOLDER_SCRIPT,file, O_CREAT|O_RDWR,0,0);	
@@ -1099,13 +1097,13 @@ int ConnectOracleRman(rman_fd_t * fdOracleRman, char * backupTargetName, char * 
 		#ifdef __ABIO_WIN	
 		if(strcmp(backupTargetName,"SYSTEM")==0)
 		{			
-			//va_remove(ABIOMASTER_CLIENT_FOLDER_SCRIPT,"Systembackup.cmd");
+			
 			sprintf(RmanSystemBackupFileName,"Systembackup_%s.cmd",commandData.backupset);
 			va_remove(ABIOMASTER_CLIENT_FOLDER_SCRIPT,RmanSystemBackupFileName);
-			//va_remove(ABIOMASTER_CLIENT_FOLDER_SCRIPT,"backup.cmd");
+			
 			CreateCommandFile("Systembackup.cmd",RmanSystemBackupFileName,backupTargetName,backupTargetDatabase,commandData.backupset,NULL);	
 			
-			//sprintf(command_path,"%sSystembackup.cmd",ABIOMASTER_CLIENT_FOLDER_SCRIPT);
+			
 			sprintf(command_path,"%s%s",ABIOMASTER_CLIENT_FOLDER_SCRIPT,RmanSystemBackupFileName);
 			sprintf(excutecommand,"%s%s",ABIOMASTER_CLIENT_FOLDER_SCRIPT,RmanExecuteFileName);
 			pid = va_spawn_process(NOWAIT_PROCESS, ORACLE_RMAN_QUERY_FILE_SHELL,"/C",excutecommand, home, sid, account, passwd, command_path, argOutputFile, NULL);
@@ -1136,7 +1134,7 @@ int ConnectOracleRman(rman_fd_t * fdOracleRman, char * backupTargetName, char * 
 		{			
 			sprintf(RmanDataBackupFileName,"backup_%s.sh",commandData.backupset);			
 			va_remove(ABIOMASTER_CLIENT_FOLDER_SCRIPT,RmanDataBackupFileName);
-			//CreateCommandFile("backup.sh",backupTargetName,commandData.backupset,NULL);
+			
 			
 			CreateCommandFile("backup.sh",RmanDataBackupFileName,backupTargetName,backupTargetDatabase,commandData.backupset,NULL);	
 			sprintf(command_path,"%s%s",ABIOMASTER_CLIENT_FOLDER_SCRIPT,RmanDataBackupFileName);			
@@ -2005,13 +2003,7 @@ int getCDB()
 	j = 0;
 	k = 0;
 
-	/*if(DBVersion <= 0)
-	{*/
-
-		//sprintf(ORACLE_RMAN_QUERY_CDB, "%s", "/blanc/test1/abio_bk/abio/db/oracle_rman/scripts/cdb.sql");
-		//printf("ORACLE_RMAN_QUERY_CDB : %s\n",ORACLE_RMAN_QUERY_CDB);
-		//printf("outputFile: %s\n",outputFile);
-
+	
 		if (ExecuteCdbSql(ORACLE_RMAN_QUERY_FILE_GET_CDB_LIST) != 0)
 		{
 			printf("not executesql\n");
@@ -2069,13 +2061,7 @@ int getCDB()
 
 		va_remove(ABIOMASTER_CLIENT_FOLDER, outputFile);	
 		
-		//DBVersion = version;
-	//}
-	/*else
-	{
-		printf("exist version\n");
-		return DBVersion;
-	}*/
+	
 
 	return cdb;
 }

@@ -1135,20 +1135,7 @@ int GetTableSpaceList()
 							// table space list 개수를 증가시킨다.
 							tableSpaceNumber++;
 						}
-						/*
-						// table space에 data file을 추가한다.
-						if (tableSpaceList[k].fileNumber % DEFAULT_MEMORY_FRAGMENT == 0)
-						{
-							tableSpaceList[k].dataFile = (char **)realloc(tableSpaceList[k].dataFile, sizeof(char *) * (tableSpaceList[k].fileNumber + DEFAULT_MEMORY_FRAGMENT));
-							memset(tableSpaceList[k].dataFile + tableSpaceList[k].fileNumber, 0, sizeof(char *) * DEFAULT_MEMORY_FRAGMENT);
-						}
-						tableSpaceList[k].dataFile[tableSpaceList[k].fileNumber] = (char *)malloc(sizeof(char) * (strlen(dataFileName) + 1));
-						memset(tableSpaceList[k].dataFile[tableSpaceList[k].fileNumber], 0, sizeof(char) * (strlen(dataFileName) + 1));
-						strcpy(tableSpaceList[k].dataFile[tableSpaceList[k].fileNumber], dataFileName);
-						*/
-
-						// table space의 data file 개수를 증가시킨다.
-						//tableSpaceList[k].fileNumber++;
+						
 					}//end more than 12 version
 					
 				}
@@ -1668,27 +1655,6 @@ void SyncOracleRmanBackupsetList()
 		memset(msg, 0, sizeof(msg));
 		sprintf(msg, "SYNC_ORACLE_RMAN_BACKUPSET_LIST_START\\start\\");
 		va_send(commandSock, msg, (int)strlen(msg) + 1, 0, DATA_TYPE_NOT_CHANGE);
-
-		// ABIO Backupset 이 남아 있는 경우, Sync 작업은 실패하고 백업셋을 전송한다.
-		//if (alertBackupsetListNumber > 0)
-		//{
-		//	for (i = 0; i<alertBackupsetListNumber; i++)
-		//	{
-		//		va_init_reply_buf(replyMsg);
-
-		//		strcpy(replyMsg[0], "SYNC_ORACLE_RMAN_BACKUPSET_LIST");
-		//		strcpy(replyMsg[1], "abio");
-		//		strcpy(replyMsg[150], alertBackupsetList[i].backupset);
-
-		//		va_make_reply_msg(replyMsg,msg);
-		//		va_send(commandSock, msg, (int)strlen(msg) + 1, 0, DATA_TYPE_NOT_CHANGE);
-		//	}
-
-		//	memset(msg, 0, sizeof(msg));
-		//	sprintf(msg, "SYNC_ORACLE_RMAN_BACKUPSET_LIST_END\\fail_abio\\");
-		//	va_send(commandSock, msg, (int)strlen(msg) + 1, 0, DATA_TYPE_NOT_CHANGE);
-		//}
-		// RMAN Backupset 이 남아 있는 경우, 로그를 전송하고 Backupset 은 Expire 한다.
 
 		for (j=0; j<expireBackupsetListNumber; j++)
 		{
@@ -2489,12 +2455,7 @@ int getDBVersion()
 		va_remove(ABIOMASTER_CLIENT_FOLDER, outputFile);	
 		
 		//DBVersion = version;
-	//}
-	/*else
-	{
-		printf("exist version\n");
-		return DBVersion;
-	}*/
+	
 
 	return version;
 }

@@ -655,20 +655,7 @@ int GetModuleConfiguration()
 					strcpy(ORACLE_RMAN_ASM_HOME, moduleConfig[i].optionValue);
 				}
 			}
-			/*else if(!strcmp(moduleConfig[i].optionName, ORACLE_RMAN_QUERY_FILE_ASM_CONTROL_BACKUP_SOURCE_OPTION_NAME_CTL))
-			{
-				if((int)strlen(moduleConfig[i].optionValue) < sizeof(ORACLE_RMAN_QUERY_FILE_ASM_CONTROL_BACKUP_SOURCE_FILE_PATH_CTL) -1)
-				{
-					strcpy(ORACLE_RMAN_QUERY_FILE_ASM_CONTROL_BACKUP_SOURCE_FILE_PATH_CTL, moduleConfig[i].optionValue);
-				}
-			}
-			else if(!strcmp(moduleConfig[i].optionName, ORACLE_RMAN_QUERY_FILE_ASM_CONTROL_BACKUP_SOURCE_OPTION_NAME_TRC))
-			{
-				if((int)strlen(moduleConfig[i].optionValue) < sizeof(ORACLE_RMAN_QUERY_FILE_ASM_CONTROL_BACKUP_SOURCE_FILE_PATH_TRC) -1)
-				{
-					strcpy(ORACLE_RMAN_QUERY_FILE_ASM_CONTROL_BACKUP_SOURCE_FILE_PATH_TRC, moduleConfig[i].optionValue);
-				}
-			}*/
+			
 		}
 		
 		for (i = 0; i < moduleConfigNumber; i++)
@@ -2013,12 +2000,7 @@ int getCDB()
 	j = 0;
 	k = 0;
 
-	/*if(DBVersion <= 0)
-	{*/
-
-		//sprintf(ORACLE_RMAN_QUERY_CDB, "%s", "/blanc/test1/abio_bk/abio/db/oracle_rman/scripts/cdb.sql");
-		//printf("ORACLE_RMAN_QUERY_CDB : %s\n",ORACLE_RMAN_QUERY_CDB);
-		//printf("outputFile: %s\n",outputFile);
+	
 
 		if (ExecuteCdbSql(ORACLE_RMAN_QUERY_FILE_GET_CDB_LIST) != 0)
 		{
@@ -2077,13 +2059,7 @@ int getCDB()
 
 		va_remove(ABIOMASTER_CLIENT_FOLDER, outputFile);	
 		
-		//DBVersion = version;
-	//}
-	/*else
-	{
-		printf("exist version\n");
-		return DBVersion;
-	}*/
+	
 
 	return cdb;
 }
