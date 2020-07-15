@@ -19,19 +19,19 @@
 `BAINFRA (2018.05 ~ 2018.12)`
  
   - VIRBAK Solution에서 구동가능 하도록 개발
-    Oracle12C DB Backup/Restore
+  - Oracle12C DB Backup/Restore
 
 * NDMP
 `BAINFRA (2017.12 ~ 2018.05)` 
  
   - VIRBAK Solution에서 구동 가능 하도록 개발
-    NDMP Server에서 DB Backup/Restore
+  - NDMP Server에서 DB Backup/Restore
   
 * OracleRman
 `BAINFRA (2017.01 ~ 2017.12)`
  
   - VIRBAK Solution에서 구동가능 하도록 개발
-    Oracle Rman DB Backup/Restore 
+  - Oracle Rman DB Backup/Restore 
  
 * 개인 프로젝트 Command tools 
 `BAINFRA (2016.01 ~ 2017.01)`
@@ -44,13 +44,17 @@
   * storage_list - storage 리스트 확인
   * volume_list - volume 리스트 확인
   
-  - 목원대학교 `(2014.07 ~ 2014.10)`
+##목원대학교 
 * 다빈 - 아두이노를 이용한 태양열 압축 쓰레기
-    적외선 감지 센서, wifly shield, 태양열 전지판 사용
+`(2014.07 ~ 2014.10)`
+
+  - 적외선 감지 센서, wifly shield, 태양열 전지판 사용
   
-  - 목원앱창작터 앱 기획/안드로이드 `(2012.06 ~ 2012.07)`
-* Horse Racing - download 1만 이상달성(개발 당시 버전이 낮아 없어짐)
-    Java 사용
+* 목원앱창작터 앱 기획/안드로이드 
+`(2012.06 ~ 2012.07)`
+  
+  - Horse Racing - download 1만 이상달성(개발 당시 버전이 낮아 없어짐)
+  - Java 사용
   
 # 보유 기술 및 사용도구
 <img alt="C" src="https://user-images.githubusercontent.com/68227132/87540524-cf38d580-c6da-11ea-8394-6424a93b3776.png" width="32" height="32"/> <img alt="C++" src="https://user-images.githubusercontent.com/68227132/87540546-d829a700-c6da-11ea-963d-2c7e16f5c9e4.png" width="32" height="32"/> <img alt="c#" src="https://user-images.githubusercontent.com/68227132/87540559-dcee5b00-c6da-11ea-944c-77d806c781b0.jpg" width="32" height="32"/> <img alt="Java" src="https://user-images.githubusercontent.com/68227132/87540638-01e2ce00-c6db-11ea-9a99-1910b2150892.png" width="32" height="32"/> <img alt="javascript" src="https://user-images.githubusercontent.com/68227132/87540654-05765500-c6db-11ea-83c3-cfc58e610c59.png" width="32" height="32"/> <img alt="html" src="https://user-images.githubusercontent.com/68227132/87540666-08714580-c6db-11ea-887a-6bf8f156bd81.png" width="32" height="32"/>
