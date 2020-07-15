@@ -2,9 +2,9 @@
 
 <img alt="github profile pic" src="https://avatars2.githubusercontent.com/u/68227132?s=400&u=27ac334fedded40907d51911caf54c4d96e7694b&v=4" width="200">
 
-** 주광수
-** Email : playarts@naver.com
-** Github : [github.com/akro89](https://github.com/akro89/Myproject)
+* 주광수
+* Email : playarts@naver.com
+* Github : [github.com/akro89](https://github.com/akro89/Myproject)
 
 
 ## 경력
