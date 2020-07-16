@@ -14,7 +14,7 @@
 	
 	
 # 프로젝트 
-## BAINFRA <img src="https://user-images.githubusercontent.com/68227132/87533361-744db100-c6cf-11ea-8cf9-a865238391e9.png" alt="virbak logo" width="22" height="22"/>
+## BAINFRA <img src="https://user-images.githubusercontent.com/68227132/87533361-744db100-c6cf-11ea-8cf9-a865238391e9.png" alt="virbak logo" width="22" height="22"/> <img alt="linux" src="https://user-images.githubusercontent.com/68227132/87620903-ace69c80-c75a-11ea-8660-3da246d39145.png" width="32" height="32"/>
 * Oracle12C 
 `BAINFRA (2018.05 ~ 2018.12)`
  
@@ -68,7 +68,7 @@
  - 신기술에 대한 거부감이 없습니다.
  
 # 활동 
-* 중국 칭다오대학 언어연수 (2019.09 ~ 2020.01)
+* 중국 칭다오대학 어학연수 (2019.09 ~ 2020.01)
 * 비트교육센터 자바 빅데이터 고급인력 양성과정 이수 (2015.06 ~ 2015.09)
 * 대덕인재개발원 전자정부 프레임워크 기반 SW 전문인력 양성과정 이수 (2014.06 ~ 2014.12)
 * 목원대학교 정보통신 공학과 학과대표 (2013.03 ~ 2014.12)
