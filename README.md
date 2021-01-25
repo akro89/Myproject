@@ -14,7 +14,7 @@
 	
 	
 # 프로젝트 
-## BAINFRA <img src="https://user-images.githubusercontent.com/68227132/87533361-744db100-c6cf-11ea-8cf9-a865238391e9.png" alt="virbak logo" width="50" height="50"/> 
+## BAINFRA <img src="https://user-images.githubusercontent.com/68227132/87533361-744db100-c6cf-11ea-8cf9-a865238391e9.png" alt="virbak logo" width="30" height="30"/> 
 * Oracle12C 
 `BAINFRA (2018.05 ~ 2018.12)`
  
