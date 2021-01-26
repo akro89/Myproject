@@ -3,6 +3,7 @@
 <img alt="github profile pic" src="https://avatars2.githubusercontent.com/u/68227132?s=400&u=27ac334fedded40907d51911caf54c4d96e7694b&v=4" width="200">
 
 * 주광수
+* 1989.03.15
 * Email : playarts@naver.com
 * Github : [github.com/akro89](https://github.com/akro89/Myproject)
 * 목원대학교 정보통신공학과 졸업
@@ -73,7 +74,7 @@
  - 문서 작성을 통한 계획실천을 따릅니다.
  
 # 활동 
-* 중국 칭다오대학 어학연수, HSK4급 보유 (2019.09 ~ 2020.01)
+* 중국 칭다오대학 어학연수, HSK4급 보유, 생활영어 가능(2019.09 ~ 2020.01)
 * 비트교육센터 자바 빅데이터 고급인력 양성과정 이수 (2015.06 ~ 2015.09)
 * 대덕인재개발원 전자정부 프레임워크 기반 SW 전문인력 양성과정 이수 (2014.06 ~ 2014.12)
 * 목원대학교 정보통신 공학과 학과대표 (2013.03 ~ 2014.03)
